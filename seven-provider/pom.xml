@@ -24,6 +24,18 @@
             <groupId>com.wang</groupId>
             <artifactId>seven-api</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.gitlab</groupId>
+            <artifactId>java-gitlab-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.kohsuke</groupId>
+            <artifactId>github-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
