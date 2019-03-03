@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为IUserDao接口方法提供sql语句配置 -->
+<mapper namespace="com.wang.provider.dao.PersonDao">
+
+    <resultMap id="person" type="com.wang.provider.dao.entity.Person">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="age" column="age"/>
+        <result property="sex" column="sex"/>
+    </resultMap>
+
+    <select id="getById" resultType="com.wang.provider.dao.entity.Person" parameterType="long">
+        SELECT * FROM person WHERE id = #{id}
+    </select>
+
+    <select id="list" resultMap="person">
+      select * FROM person;
+    </select>
+
+</mapper>
