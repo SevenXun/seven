@@ -19,4 +19,8 @@
       select * FROM person;
     </select>
 
+    <select id="getByTableAndId" resultMap="person">
+      select * FROM ${tableName} where id=#{id};
+    </select>
+
 </mapper>

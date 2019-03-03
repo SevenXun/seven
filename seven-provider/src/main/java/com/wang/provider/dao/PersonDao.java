@@ -15,4 +15,7 @@ public interface PersonDao {
 
 //    @Select("select * from person where id=#{id}")
     Person getById(@Param("id")long id);
+
+    Person getByTableAndId(@Param("id")long id,@Param("tableName")String tableName);
+
 }

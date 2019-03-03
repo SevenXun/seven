@@ -16,7 +16,7 @@ public class PersonServiceImpl {
         return personDao.list();
     }
 
-    public Person getById(long id){
-        return personDao.getById(id);
+    public Person getById(long id) {
+        return personDao.getByTableAndId(id, "person");
     }
 }
